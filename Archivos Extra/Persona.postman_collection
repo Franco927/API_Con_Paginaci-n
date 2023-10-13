@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "9e26277b-c5db-4358-bae0-9b5648c5d53b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29859197"
+	},
+	"item": [
+		{
+			"name": "Persona",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apiconpaginacion-r94o.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apiconpaginacion-r94o",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apiconpaginacion-r94o.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"apiconpaginacion-r94o",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nombre\": \"Franco\",\r\n        \"apellido\": \"Ivani\",\r\n        \"dni\": 45454545,\r\n        \"domicilio\": {\r\n            \"calle\": \"San Martin\",\r\n            \"numero\": 1649,\r\n            \"localidad\": {\r\n                \"denominacion\": \"Godoy Cruz\"\r\n            }\r\n        },\r\n        \"libros\": [\r\n            {\r\n                \"titulo\": \"Aprendiendo JAVA\",\r\n                \"genero\": \"Manual\",\r\n                \"paginas\": 7526,\r\n                \"fecha\": 2015,\r\n                \"autores\": [\r\n                    {\r\n                        \"nombre\": \"William\",\r\n                        \"apellido\": \"Shakespeare\",\r\n                        \"biografia\": \"el poeta\"\r\n                    }]\r\n            },\r\n            {\r\n                \"titulo\": \"Star Wars: Episodio IV\",\r\n                \"genero\": \"Ciencia Ficción\",\r\n                \"paginas\": 489,\r\n                \"fecha\": 1977,\r\n                \"autores\":[\r\n                    {\r\n                        \"nombre\": \"Luke\",\r\n                        \"apellido\": \"Skywalker\",\r\n                        \"biografia\": \"Actor, escritor y personaje de este libro\"\r\n                    }\r\n                ]\r\n            }\r\n                ]\r\n }"
+						},
+						"url": {
+							"raw": "https://apiconpaginacion-r94o.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"apiconpaginacion-r94o",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Franco\",\r\n    \"apellido\": \"Ivani\",\r\n    \"dni\": 121212121,\r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "https://apiconpaginacion-r94o.onrender.com/api/v1/personas/1",
+							"protocol": "https",
+							"host": [
+								"apiconpaginacion-r94o",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://apiconpaginacion-r94o.onrender.com/api/v1/personas/2",
+							"protocol": "https",
+							"host": [
+								"apiconpaginacion-r94o",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
